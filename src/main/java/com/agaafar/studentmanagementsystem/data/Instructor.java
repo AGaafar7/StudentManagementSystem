@@ -7,6 +7,18 @@ public class Instructor {
     private String instructorName;
     private ArrayList<Course> courses;
 
+    public Instructor(){}
+
+    public Instructor(int id, String instructorName){
+        this.id = id;
+        this.instructorName = instructorName;
+    }
+    public Instructor(int id, String instructorName, ArrayList<Course> courses){
+        this.id = id;
+        this.instructorName = instructorName;
+        this.courses = courses;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
