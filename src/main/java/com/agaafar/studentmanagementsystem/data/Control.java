@@ -2,22 +2,22 @@ package com.agaafar.studentmanagementsystem.data;
 
 import java.util.ArrayList;
 
-public class Control<E> {
-    private ArrayList<E> dataList;
+public class Control<T> {
+    private ArrayList<T> dataList;
 
     public Control(){
         this.dataList = new ArrayList<>();
     }
 
-    public void create(E object){
+    public void create(T object){
         this.dataList.add(object);
     }
 
-    public ArrayList<E> read(){
+    public ArrayList<T> read(){
         return this.dataList;
     }
 
-    public void update(int id, E newObject) {
+    public void update(int id, T newObject) {
         //TODO: Implement Update
         System.out.println("Data not found. Check your information.");
     }
@@ -26,7 +26,7 @@ public class Control<E> {
         //TODO: Implement Delete
         System.out.println("Data not found. Please check your information.");
     }
-    public void setStudentsList(ArrayList<E> studentsList){
+    public void setStudentsList(ArrayList<T> studentsList){
         this.dataList = studentsList;
     }
 
@@ -34,7 +34,7 @@ public class Control<E> {
         return (ArrayList<Student>) dataList;
     }
 
-    public void setInstructorList(ArrayList<E> instructorList){
+    public void setInstructorList(ArrayList<T> instructorList){
         this.dataList = instructorList;
     }
 
@@ -42,7 +42,7 @@ public class Control<E> {
         return (ArrayList<Instructor>) dataList;
     }
 
-    public void setGradesList(ArrayList<E> gradesList){
+    public void setGradesList(ArrayList<T> gradesList){
         this.dataList = gradesList;
     }
 
@@ -50,7 +50,7 @@ public class Control<E> {
         return (ArrayList<Grade>) dataList;
     }
 
-    public void setCourseList (ArrayList<E> courseList){
+    public void setCourseList (ArrayList<T> courseList){
         this.dataList = courseList;
     }
 

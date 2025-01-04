@@ -7,11 +7,11 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="310.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="310.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.agaafar.studentmanagementsystem.Controller">
    <children>
       <Text layoutX="136.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Your Student Portal" />
-      <Button layoutX="199.0" layoutY="142.0" mnemonicParsing="false" text="Submit" />
-      <TextField layoutX="150.0" layoutY="39.0" promptText="Name" />
-      <DatePicker editable="true" layoutX="138.0" layoutY="82.0" promptText="Date Of Birth" />
+      <Button fx:id="studentRegisterBtn" layoutX="199.0" layoutY="142.0" mnemonicParsing="false" onAction="#onStudentSubmitButton" text="Submit" />
+      <TextField fx:id="studentName" layoutX="150.0" layoutY="39.0" promptText="Name" />
+      <DatePicker fx:id="doB" editable="true" layoutX="138.0" layoutY="82.0" onAction="#getDate" promptText="Date Of Birth" />
    </children>
 </AnchorPane>
