@@ -18,6 +18,7 @@ public class EnrollController implements Initializable {
     private Stage stage;
     private Scene scene;
     private Parent root;
+    //TODO: Replace those lists with dyanmic values based on available instructors and courses
 
     //Available courses dropdown
     @FXML
